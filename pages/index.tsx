@@ -1,26 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
-
-const Navbar = () => {
-	return (
-		<nav className='w-full flex justify-end py-3 px-6 bg-slate-950 text-violet-50 my-nav'>
-			<ul className='flex space-x-5'>
-				<li>
-					<Link href='/'>Home</Link>
-				</li>
-				<li>
-					<Link href='/projects'>Projects</Link>
-				</li>
-				<li>
-					<Link href='/info'>Info</Link>
-				</li>
-			</ul>
-		</nav>
-	);
-};
 
 export default function Home() {
 	const [mainContentHeight, setMainContentHeight] = useState('auto');
@@ -42,7 +23,6 @@ export default function Home() {
 	return (
 		<>
 			<div className='w-full h-screen'>
-				<Navbar />
 				<main className={`w-full items-center text-white bg-slate-700`}>
 					<div
 						style={{ height: mainContentHeight }}
