@@ -1,4 +1,6 @@
-export default function Index({ mainContentHeight }) {
+import { PageWithMainContentHeight } from '../types/types';
+
+const Index: PageWithMainContentHeight = ({ mainContentHeight }) => {
 	return (
 		<>
 			<div
@@ -9,4 +11,6 @@ export default function Index({ mainContentHeight }) {
 			</div>
 		</>
 	);
-}
+};
+
+export default Index;

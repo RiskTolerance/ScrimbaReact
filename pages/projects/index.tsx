@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import { PageWithMainContentHeight } from '../../types/types';
 
-export default function About({ mainContentHeight }) {
+const Projects: PageWithMainContentHeight = ({ mainContentHeight }) => {
 	return (
 		<div
 			style={{ height: mainContentHeight }}
@@ -26,4 +27,6 @@ export default function About({ mainContentHeight }) {
 			</div>
 		</div>
 	);
-}
+};
+
+export default Projects;

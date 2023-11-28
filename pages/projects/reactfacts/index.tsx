@@ -1,7 +1,8 @@
 import Image from 'next/image';
 import { Mirror } from '../../../components/Mirror';
+import { PageWithMainContentHeight } from '../../../types/types';
 
-export default function ReactFacts({ mainContentHeight }) {
+const ReactFacts: PageWithMainContentHeight = ({ mainContentHeight }) => {
 	return (
 		<div
 			style={{ height: mainContentHeight }}
@@ -62,4 +63,6 @@ export default function ReactFacts({ mainContentHeight }) {
 			</div>
 		</div>
 	);
-}
+};
+
+export default ReactFacts;

@@ -1,4 +1,6 @@
-export default function About({ mainContentHeight }) {
+import { PageWithMainContentHeight } from '../../types/types';
+
+const Info: PageWithMainContentHeight = ({ mainContentHeight }) => {
 	return (
 		<div
 			style={{ height: mainContentHeight }}
@@ -37,4 +39,6 @@ export default function About({ mainContentHeight }) {
 			</div>
 		</div>
 	);
-}
+};
+
+export default Info;
