@@ -13,15 +13,15 @@ const Projects: PageWithMainContentHeight = ({ mainContentHeight }) => {
 				</h1>
 				<ul className='text-xl'>
 					<li className='flex space-x-1'>
-						<a className='text-react-blue' href='/projects/reactfacts'>
+						<Link className='text-react-blue' href='/projects/reactfacts'>
 							React Facts
-						</a>
-						<a
+						</Link>
+						<Link
 							className='text-svelte-orange'
 							href='https://cheerful-kheer-188a66.netlify.app/projects/sveltefacts'
 							target='_blank'>
 							(Svelte Version)
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>
