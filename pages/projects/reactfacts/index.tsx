@@ -2,6 +2,27 @@ import Image from 'next/image';
 import { Mirror } from '../../../components/Mirror';
 import { PageWithMainContentHeight } from '../../../types/types';
 
+type factString = {
+	fact: string;
+};
+
+const Fact = ({ fact }: factString) => {
+	return (
+		<div className='flex'>
+			<div className='text-xl text-[#61dafb] -translate-y-1'>●&nbsp;</div>
+			<div>{fact}</div>
+		</div>
+	);
+};
+
+const facts = [
+	'Was first released in 2013',
+	'Was originally created by Jordan Walke',
+	'Has well over 100k starts on GitHub',
+	'Is maintained by Facebook',
+	'Powers thousands of enterprise apps, including mobile apps',
+];
+
 const ReactFacts: PageWithMainContentHeight = ({ mainContentHeight }) => {
 	return (
 		<div
@@ -22,38 +43,9 @@ const ReactFacts: PageWithMainContentHeight = ({ mainContentHeight }) => {
 							<h1>Fun Facts About React</h1>
 						</div>
 						<div className='ml-8'>
-							<div className='flex'>
-								<div className='text-xl text-[#61dafb] -translate-y-1'>
-									●&nbsp;
-								</div>
-								<div>Was first released in 2013</div>
-							</div>
-							<div className='flex'>
-								<div className='text-xl text-[#61dafb] -translate-y-1'>
-									●&nbsp;
-								</div>
-								<div>Was originally created by Jordan Walke</div>
-							</div>
-							<div className='flex'>
-								<div className='text-xl text-[#61dafb] -translate-y-1'>
-									●&nbsp;
-								</div>
-								<div>Has well over 100K stars on GitHub</div>
-							</div>
-							<div className='flex'>
-								<div className='text-xl text-[#61dafb] -translate-y-1'>
-									●&nbsp;
-								</div>
-								<div>Is maintained by Facebook</div>
-							</div>
-							<div className='flex'>
-								<div className='text-xl text-[#61dafb] -translate-y-1'>
-									●&nbsp;
-								</div>
-								<div>
-									Powers thousands of enterprise apps, including mobile apps
-								</div>
-							</div>
+							{facts.map((fact, i) => {
+								return <Fact key={i} fact={fact} />;
+							})}
 						</div>
 					</div>
 				</div>

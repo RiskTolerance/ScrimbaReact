@@ -23,6 +23,17 @@ const Projects: PageWithMainContentHeight = ({ mainContentHeight }) => {
 							(Svelte Version)
 						</Link>
 					</li>
+					<li className='flex space-x-1'>
+						<Link className='text-react-blue' href='/projects/airbnbclone'>
+							airbnb Clone
+						</Link>
+						<Link
+							className='text-svelte-orange'
+							href='https://cheerful-kheer-188a66.netlify.app/projects/sveltefacts'
+							target='_blank'>
+							(Svelte Version)
+						</Link>
+					</li>
 				</ul>
 			</div>
 		</div>

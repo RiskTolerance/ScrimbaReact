@@ -5,3 +5,37 @@
 body {
 	background-color: #334155;
 }
+
+.scroll::-webkit-scrollbar {
+	height: 5px;
+	width: 12px;
+	background: white;
+	--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+		0 4px 6px -4px var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.scroll::-webkit-scrollbar-thumb {
+	background: #ff5a5f;
+	-webkit-border-radius: 1ex;
+}
+
+.scroll::-webkit-scrollbar-corner {
+	background: white;
+}
+
+/* Firefox */
+.scroll {
+	scrollbar-color: #ff5a5f white;
+	scrollbar-width: thin;
+	/* steal shadow from tailwind :D */
+	--tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	--tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),
+		0 4px 6px -4px var(--tw-shadow-color);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+		var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
