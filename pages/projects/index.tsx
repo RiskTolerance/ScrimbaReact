@@ -18,7 +18,7 @@ const Projects: PageWithMainContentHeight = ({ mainContentHeight }) => {
 						</Link>
 						<Link
 							className='text-svelte-orange'
-							href='https://cheerful-kheer-188a66.netlify.app/projects/sveltefacts'
+							href='https://sveltekit-next-mirror.netlify.app/projects/sveltefacts'
 							target='_blank'>
 							(Svelte Version)
 						</Link>
@@ -29,7 +29,7 @@ const Projects: PageWithMainContentHeight = ({ mainContentHeight }) => {
 						</Link>
 						<Link
 							className='text-svelte-orange'
-							href='https://cheerful-kheer-188a66.netlify.app/projects/sveltefacts'
+							href='https://sveltekit-next-mirror.netlify.app/projects/airbnbclone'
 							target='_blank'>
 							(Svelte Version)
 						</Link>
