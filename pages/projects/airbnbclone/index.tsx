@@ -66,7 +66,7 @@ const cardData: cardData = [
 const Airbnbclone = () => {
 	return (
 		<>
-			<Mirror url='https://www.google.com' />
+			<Mirror url='https://sveltekit-next-mirror.netlify.app/projects/airbnbclone' />
 			<div className='w-full my-12 flex justify-center items-center'>
 				<div className='w-1/2 min-w-[350px] max-w-[700px] flex relative flex-col overflow-clip rounded-lg shadow-2xl bg-white'>
 					{/* header */}
