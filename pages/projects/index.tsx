@@ -46,12 +46,12 @@ const Projects: PageWithMainContentHeight = ({ mainContentHeight }) => {
 		<div
 			style={{ height: mainContentHeight }}
 			className='flex flex-col w-full items-center justify-center'>
-			<div className='w-1/4 text-white flex flex-col space-y-6 mt-8'>
+			<div className='max-w-1/4 px-20 text-white flex flex-col space-y-6 mt-8'>
 				<h1>
 					This is a list of links to the projects I have completed or am
 					currently working on:
 				</h1>
-				<ul className='text-xl space-y-2'>
+				<ul className='text-sm sm:text-base md:text-xl space-y-2'>
 					{projectsArr.map((p, i) => {
 						if (p.status) {
 							return <ProjectCard project={p} key={i}></ProjectCard>;

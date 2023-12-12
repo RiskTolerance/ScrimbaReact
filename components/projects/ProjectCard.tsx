@@ -13,13 +13,13 @@ interface ProjectProps {
 
 const ProjectCard = ({ project }: ProjectProps) => {
 	return (
-		<li className='flex space-x-1 bg-neutral-950 p-5 rounded-md justify-between'>
-			<div className='flex justify-start'>
+		<li className='flex flex-col sm:flex-row bg-neutral-950 p-5 rounded-md items-center justify-center sm:justify-between'>
+			<div className='flex justify-center sm:justify-start mb-2 sm:mb-0'>
 				<Link className='text-react-blue' href={project.localUrl}>
 					{project.name}
 				</Link>
 			</div>
-			<div className='w-1/3 flex justify-end'>
+			<div className='flex justify-center sm:justify-end'>
 				<Link
 					className='text-svelte-orange'
 					href={project.externalUrl}
