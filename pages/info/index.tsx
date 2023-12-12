@@ -4,9 +4,9 @@ const Info: PageWithMainContentHeight = ({ mainContentHeight }) => {
 	return (
 		<div
 			style={{ minHeight: mainContentHeight }}
-			className='w-full flex justify-center items-center pb-10'>
-			<div className='w-3/4 flex flex-col justify-center items-center'>
-				<div className='text-white flex flex-col space-y-6 mt-8'>
+			className='w-full flex justify-center items-center p-10'>
+			<div className='w-full sm:w-3/4 flex flex-col justify-center items-center'>
+				<div className='text-white flex flex-col space-y-6'>
 					<h1 className='font-bold text-4xl'>
 						Hello - welcome to the party! 🦍
 					</h1>

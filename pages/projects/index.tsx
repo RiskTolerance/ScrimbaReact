@@ -44,14 +44,14 @@ const projectsArr: ProjectsArray = [
 const Projects: PageWithMainContentHeight = ({ mainContentHeight }) => {
 	return (
 		<div
-			style={{ height: mainContentHeight }}
-			className='flex flex-col w-full items-center justify-center'>
-			<div className='max-w-1/4 px-20 text-white flex flex-col space-y-6 mt-8'>
+			style={{ minHeight: mainContentHeight }}
+			className='flex flex-col w-full items-center justify-center p-10'>
+			<div className='max-w-1/4 text-white flex flex-col space-y-6'>
 				<h1>
 					This is a list of links to the projects I have completed or am
 					currently working on:
 				</h1>
-				<ul className='text-sm sm:text-base md:text-xl space-y-2'>
+				<ul className='text-base md:text-xl space-y-3'>
 					{projectsArr.map((p, i) => {
 						if (p.status) {
 							return <ProjectCard project={p} key={i}></ProjectCard>;
