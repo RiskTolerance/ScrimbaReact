@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { PageWithMainContentHeight } from '../../types/types';
 import ProjectCard from '../../components/projects/ProjectCard';
 import ProjectCardDisabled from '../../components/projects/ProjectCardDisabled';
@@ -14,8 +13,8 @@ type ProjectsArray = Project[];
 
 const projectsArr: ProjectsArray = [
 	{
-		name: 'Svelte Facts',
-		localUrl: '/projects/sveltefacts',
+		name: 'React Facts',
+		localUrl: '/projects/reactfacts',
 		externalUrl:
 			'https://next-sveltekit-mirror.netlify.app/projects/reactfacts',
 		status: true,
@@ -31,7 +30,7 @@ const projectsArr: ProjectsArray = [
 		name: 'Meme Generator',
 		localUrl: '/projects/memegen',
 		externalUrl: 'https://www.google.com',
-		status: false,
+		status: true,
 	},
 	{
 		name: 'Notes App',

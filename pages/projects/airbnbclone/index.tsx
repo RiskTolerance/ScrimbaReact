@@ -63,7 +63,7 @@ const cardData: cardData = [
 	},
 ];
 
-const Airbnbclone = () => {
+const AirbnbClone = () => {
 	return (
 		<>
 			<Mirror url='https://sveltekit-next-mirror.netlify.app/projects/airbnbclone' />
@@ -121,4 +121,4 @@ const Airbnbclone = () => {
 	);
 };
 
-export default Airbnbclone;
+export default AirbnbClone;

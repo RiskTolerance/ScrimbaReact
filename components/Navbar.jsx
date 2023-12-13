@@ -8,7 +8,7 @@ export const Navbar = () => {
 			<ul className='flex space-x-5 font-bold'>
 				<li>
 					<Link
-						style={{ color: `${pathname === '/' ? '#61dafb' : ''}` }}
+						style={{ color: `${pathname === '/' ? '#61dafb' : '#f8fafc'}` }}
 						className='hover:text-react-blue'
 						href='/'>
 						Home
@@ -17,7 +17,7 @@ export const Navbar = () => {
 				<li>
 					<Link
 						style={{
-							color: `${pathname === '/projects' ? '#61dafb' : ''}`,
+							color: `${pathname === '/projects' ? '#61dafb' : '#f8fafc'}`,
 						}}
 						className='hover:text-react-blue'
 						href='/projects'>
@@ -26,7 +26,7 @@ export const Navbar = () => {
 				</li>
 				<li>
 					<Link
-						style={{ color: `${pathname === '/info' ? '#61dafb' : ''}` }}
+						style={{ color: `${pathname === '/info' ? '#61dafb' : '#f8fafc'}` }}
 						className='hover:text-react-blue'
 						href='/info'>
 						Info
