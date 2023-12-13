@@ -43,10 +43,10 @@ const MemeGenerator: PageWithMainContentHeight = ({ mainContentHeight }) => {
 
 	return (
 		<>
-			{/* <Mirror url='https://www.google.com' /> */}
+			<Mirror url='https://sveltekit-next-mirror.netlify.app/projects/memegen' />
 			<div
 				style={{ minHeight: mainContentHeight }}
-				className='w-full h-full flex flex-col justify-center items-center'>
+				className='w-full h-full flex flex-col justify-center items-center py-10'>
 				<div className='w-[600px] bg-slate-50 rounded-lg overflow-clip text-slate-50'>
 					<div className='w-full h-24 flex items-center justify-between px-10 bg-gradient-to-br from-gray-900 via-purple-900 to-violet-600 shadow-md'>
 						<h1 className='text-2xl font-bold'>Meme Generator ✨</h1>

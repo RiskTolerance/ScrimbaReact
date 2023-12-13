@@ -29,7 +29,7 @@ const projectsArr: ProjectsArray = [
 	{
 		name: 'Meme Generator',
 		localUrl: '/projects/memegen',
-		externalUrl: 'https://www.google.com',
+		externalUrl: 'https://sveltekit-next-mirror.netlify.app/projects/memegen',
 		status: true,
 	},
 	{
