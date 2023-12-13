@@ -34,7 +34,7 @@ const Info: PageWithMainContentHeight = ({ mainContentHeight }) => {
 						<a
 							className='text-svelte-orange'
 							target='_blank'
-							href='https://cheerful-kheer-188a66.netlify.app/info'>
+							href='https://sveltekit-next-mirror.netlify.app/info'>
 							this page
 						</a>{' '}
 						will be mirrored!
